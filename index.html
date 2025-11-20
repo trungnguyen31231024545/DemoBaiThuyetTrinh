@@ -48,8 +48,19 @@
     .for-you .card { border-radius:8px; overflow:hidden; box-shadow:0 6px 12px rgba(0,0,0,0.04); }
 
     /* Steps */
-    .steps-row { display:flex; gap:20px; justify-content:center; align-items:center; flex-wrap:wrap; margin:36px 0; }
-    .step-box { width:220px; background:#fff; border-radius:12px; padding:18px; box-shadow:0 8px 22px rgba(7,18,20,0.06); text-align:center; }
+    .ui.steps .step {
+      border-radius: 12px !important;
+      padding: 20px !important;
+      box-shadow: 0 8px 22px rgba(7,18,20,0.06) !important;
+    }
+
+    .ui.steps .icon {
+      color: #0b6561 !important;
+    }
+
+    .ui.steps .step .title {
+      font-weight: 600;
+    }
 
     /* Footer */
     .footer {
@@ -347,27 +358,39 @@
     </div>
   </div>
 
-  <!-- ===== QUY TRÌNH ĐẶT VÉ ===== -->
+  <!-- ===== QUY TRÌNH ĐẶT VÉ (SEMANTIC UI STEPS) ===== -->
   <div class="section">
     <h3 class="ui header">QUY TRÌNH ĐẶT VÉ</h3>
-    <div class="steps-row">
-      <div class="step-box">
-        <i class="large folder open outline icon" style="color:#0b6561"></i>
-        <h4>Chọn sự kiện</h4>
-        <p style="color:#6b6b6b; font-size:13px;">Xem thông tin & đăng ký</p>
+
+    <div class="ui three stackable steps">
+
+      <div class="step">
+        <i class="folder open outline icon"></i>
+        <div class="content">
+          <div class="title">Chọn sự kiện</div>
+          <div class="description">Xem thông tin & đăng ký</div>
+        </div>
       </div>
-      <div class="step-box">
-        <i class="large credit card outline icon" style="color:#0b6561"></i>
-        <h4>Thanh toán</h4>
-        <p style="color:#6b6b6b; font-size:13px;">Thanh toán nhanh</p>
+
+      <div class="step">
+        <i class="credit card outline icon"></i>
+        <div class="content">
+          <div class="title">Thanh toán</div>
+          <div class="description">Thanh toán nhanh</div>
+        </div>
       </div>
-      <div class="step-box">
-        <i class="large mail outline icon" style="color:#0b6561"></i>
-        <h4>Email xác nhận</h4>
-        <p style="color:#6b6b6b; font-size:13px;">Nhận vé & thông tin</p>
+
+      <div class="step">
+        <i class="mail outline icon"></i>
+        <div class="content">
+          <div class="title">Email xác nhận</div>
+          <div class="description">Nhận vé & thông tin</div>
+        </div>
       </div>
+
     </div>
   </div>
+
   <!-- ===================== CONTACT FORM (VALIDATION) ===================== -->
   <div class="section">
     <h3 class="ui header">Liên hệ hỗ trợ</h3>
